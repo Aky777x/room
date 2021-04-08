@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>吹き出し画像案</title>
+    <meta name="description" content="サイトキャプションを入力" />
+    <meta name="keywords" content="サイトキーワードを,で区切って入力" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <!----- メインコンテンツ ----->
+    <article>
+      <section>
+        <div class="room">
+          <img
+            src="img/room.png"
+            alt="間取り図"
+            title="タイトル"
+            width="540"
+            height="720"
+          />
+          <button class="balloon" id="toilet" onclick="myFunc('toilet')">
+            <span name="txt" id="toilet-temp"></span>℃
+          </button>
+          <button class="balloon" id="leftRoom" onclick="myFunc('洋室')">
+            <span name="txt" id="leftRoom-temp"></span>℃
+          </button>
+        </div>
+      </section>
+    </article>
+    <!----- メインコンテンツ END ----->
+
+    <!----- フッター ----->
+    <footer>フッター</footer>
+    <!----- フッター END ----->
+  </body>
+</html>
