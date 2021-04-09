@@ -6,6 +6,7 @@
 
 /* 吹き出し本体 - 普通の吹き出し */
 .hot {
+  width: 80px;
   position: relative;
   padding: 20px;
   border-radius: 35px; /* 角丸を指定 */
@@ -30,6 +31,7 @@
 
 /* 吹き出し本体 - 普通の吹き出し */
 .cold {
+  width: 80px;
   position: relative;
   padding: 20px;
   border-radius: 35px; /* 角丸を指定 */
@@ -53,6 +55,7 @@
 
 /* 吹き出し本体 - 普通の吹き出し */
 .comfortable {
+  width: 80px;
   position: relative;
   padding: 20px;
   border-radius: 35px; /* 角丸を指定 */
