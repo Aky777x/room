@@ -23,23 +23,27 @@ window.onload = () => {
   const rooms = document.getElementsByClassName("balloon");
   console.log(rooms);
 
-  //   rooms.forEach((room,index) => {
-  //     const div = room.id;
-  //     const temp = room.id + "-temp";
-  //     temp = document.getElementById(temp);
-  //     temp.innerHTML = temperatureList[index];
-  //     colorChange(div, temp);
-  //   });
+  for (let i = 0; i < rooms.length; i++) {
+    const div = rooms[i];
+    let temp = div.id + "-temp";
+    debugger;
+    console.log(document.getElementById(temp));
+    temp = document.getElementById(temp);
+    temp.innerHTML = temperatureList[i];
+    // const divTemp = temp.innerHTML;
+
+    colorChange(div, temp);
+  }
 
   // トイレ
-  const toilet = document.getElementById("toilet");
-  const toiletTemp = document.getElementById("toilet-temp");
-  toiletTemp.innerHTML = temperatureList[0];
-  colorChange(toilet, toiletTemp);
+  //   const toilet = document.getElementById("toilet");
+  //   const toiletTemp = document.getElementById("toilet-temp");
+  //   toiletTemp.innerHTML = temperatureList[0];
+  //   colorChange(toilet, toiletTemp);
 
-  // 左の洋室
-  const leftRoom = document.getElementById("leftRoom");
-  const leftRoomTemp = document.getElementById("leftRoom-temp");
-  leftRoomTemp.innerHTML = temperatureList[1];
-  colorChange(leftRoom, leftRoomTemp);
+  //   // 左の洋室
+  //   const leftRoom = document.getElementById("leftRoom");
+  //   const leftRoomTemp = document.getElementById("leftRoom-temp");
+  //   leftRoomTemp.innerHTML = temperatureList[1];
+  //   colorChange(leftRoom, leftRoomTemp);
 };
